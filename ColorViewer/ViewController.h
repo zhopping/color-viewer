@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+- (IBAction)viewColor:(id)sender;
+@property (nonatomic) NSArray * colorStrings;
+@property (nonatomic) NSArray * colorValues;
+@property (nonatomic) int selectedRow;
 @end
